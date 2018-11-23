@@ -1,0 +1,109 @@
+body {
+  margin:0;
+  font-family: 'Segoe UI', Verdana;
+  font-size: 16px;
+  color:#fff;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0;
+}
+span {
+  font-size: 1.2rem;
+}
+.background {
+  background-image: url("blue.jpg");
+  width:100vw;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+}
+.img {
+  background-image: url("dark.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 6px #000, 0px 0px 3px #000;
+  border-radius: 10px;
+  min-width: 320px;
+}
+.content {
+  padding:20px;
+}
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+  background-image: url("logo.jpg");
+  background-size: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.border {
+  border: 5px solid rgba(218, 218, 218, 0.1);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+.title {
+  float: right;
+  margin:10px;
+  padding: 40px 20px;
+}
+.fio {
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+.description {
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 0;
+}
+.contacts {
+  text-align: center;
+  font-size: 2rem;
+}
+.fab, .fas {
+  margin-right: 20px;
+}
+.fa-envelope {
+  margin-right: 0;
+}
+.text__icon {
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+a, a:hover, a:active, a:focus {
+  color:#fff;
+  text-decoration: none;
+}
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .content {
+    padding:0;
+  }
+  .border {
+    float: none;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .title {
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .contacts {
+    margin-bottom: 10px;
+  }
+}
