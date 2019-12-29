@@ -1,5 +1,5 @@
 body {
-  margin:0;
+  margin: 0;
   font-family: 'Segoe UI', Verdana;
   font-size: 16px;
   color:#fff;
@@ -81,6 +81,9 @@ span {
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+.hidden {
+  display: none;
 }
 a, a:hover, a:active, a:focus {
   color:#fff;
