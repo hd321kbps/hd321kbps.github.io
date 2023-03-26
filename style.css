@@ -2,111 +2,127 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Verdana;
   font-size: 16px;
-  color:#fff;
+  color: #fff;
   box-sizing: border-box;
-}
-h1 {
-  margin: 0;
-}
-span {
-  font-size: 1.2rem;
-}
-.background {
-  background-image: url("blue.jpg");
-  width:100vw;
+  background-image: url('background.jpg');
+  background-position: center;
+  width: 100vw;
   height: 100vh;
-  position: relative;
   background-size: cover;
-}
-.img {
-  background-image: url("dark.png");
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 6px #000, 0px 0px 3px #000;
-  border-radius: 10px;
-  min-width: 320px;
-}
-.content {
-  padding:20px;
-}
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
-.logo {
-  background-image: url("logo.jpg");
-  background-size: 200px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-.border {
-  border: 5px solid rgba(218, 218, 218, 0.1);
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  float: left;
-}
-.title {
-  float: right;
-  margin:10px;
-  padding: 40px 20px;
-}
-.fio {
-  font-weight: 900;
-  font-size: 2.3rem;
-}
-.description {
-  font-size: 2rem;
-  font-weight: 200;
-  margin: 0;
-}
-.contacts {
-  text-align: center;
-  font-size: 2rem;
-}
-.fab, .fas {
-  margin-right: 20px;
-}
-.fa-envelope {
-  margin-right: 0;
-}
-.text__icon {
-  margin-left: 10px;
-  vertical-align: bottom;
-}
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-.hidden {
-  display: none;
-}
-a, a:hover, a:active, a:focus {
-  color:#fff;
-  text-decoration: none;
-}
-:focus {
-  outline: -webkit-focus-ring-color auto 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media only screen and (max-width: 1140px) {
+.header {
+  display: flex;
+  text-align: center;
+}
+
+.avatar {
+  background-image: url('avatar.jpg');
+  background-size: 210px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 25px;
+  border: 5px solid rgba(218, 218, 218, 0.1);
+}
+
+.description {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.content {
+  background-image: url('dark.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  flex-direction: column;
+  box-shadow: 0px 0px 6px #000, 0px 0px 3px #000;
+  border-radius: 10px;
+}
+
+.footer {
+  margin: 25px 0 0 0;
+}
+
+.contact-link {
+  display: inline-block;
+}
+
+.contact-link i {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.contact-link:last-child i {
+  margin-right: 0;
+}
+
+@media (max-width: 550px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .avatar {
+    margin-right: 0;
+  }
+
+  .subtitle {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 320px) {
   .content {
-    padding:0;
+    padding: 20px;
   }
-  .border {
-    float: none;
-    margin: 0 auto;
-    margin-top: 10px;
+
+  .contact-link i {
+    margin-right: 10px;
   }
-  .title {
-    padding: 0px 10px;
-    text-align: center;
+}
+
+@media (max-width: 320px) {
+  .content {
+    padding: 15px;
   }
-  .contacts {
-    margin-bottom: 10px;
+}
+
+@media (orientation: landscape) {
+  .header {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 280px) {
+  .avatar {
+    background-size: 160px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .footer {
+    margin: 15px 0 0 0;
   }
 }
