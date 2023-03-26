@@ -79,6 +79,10 @@ body {
   margin-right: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 550px) {
   .header {
     flex-direction: column;
